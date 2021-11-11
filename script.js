@@ -4,7 +4,7 @@ function promptArray(strng = prompt("Put some elements over space")) {
             strng = parseInt(Math.random()*Math.pow(10, Math.floor(Math.random() * 10)+1), 32).toString(40); //for testing error.
         } catch (error) {//Because toString(param) may throws RangeError.
             alert(`Oops, we have an error: ${error}.`);
-            strng = `${Math.random()*Math.pow(10, Math.floor(Math.random() * 10)+1)}`; //It`s counter-hypothesis.
+            strng = parseInt(Math.random()*Math.pow(10, Math.floor(Math.random() * 10)+1), 32).toString(32); //It`s counter-hypothesis.
         }
     }
         return strng.includes(' ') ? strng.split(' ') : strng.split(''); // for the naughty users

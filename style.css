@@ -1,4 +1,8 @@
 body{
     background: darkslateblue;
-    color: lightskyblue
+    color: lightskyblue;
+    font-size: 2em;
+}
+li:hover{
+    color: red;
 }
